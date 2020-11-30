@@ -10,11 +10,11 @@ import { CountergroupComponent } from './countergroup/countergroup.component';
   declarations: [
     AppComponent,
     CounterComponent,
-    CountergroupComponent
+    CountergroupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
