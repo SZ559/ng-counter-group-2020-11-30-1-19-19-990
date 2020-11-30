@@ -4,4 +4,9 @@ export class Counter {
   {
     this.account = account;
   }
+
+  public increase(): void
+  {
+    this.account ++;
+  }
 }
