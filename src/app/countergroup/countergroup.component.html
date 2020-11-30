@@ -1,5 +1,6 @@
 <input type = "number" #size (keyup.enter) = "setSize(size.value)">
-<nz-button (click) = "setSize(size.value)"><i nz-icon nzType="redo" nzTheme="outline"></i></nz-button>
+<button nz-button nzType="primary" (click) = "setSize(size.value)">reset</button>
+<!-- <nz-button (click) = "setSize(size.value)"><i nz-icon nzType="redo" nzTheme="outline"></i></nz-button> -->
 
 <div *ngFor="let counter of counters">
   <app-counter [counter]="counter"></app-counter>
