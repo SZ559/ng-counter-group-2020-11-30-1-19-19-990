@@ -14,4 +14,8 @@ export class Counter {
   {
     this.account --;
   }
+
+  public reset(): void{
+    this.account = 0;
+  }
 }

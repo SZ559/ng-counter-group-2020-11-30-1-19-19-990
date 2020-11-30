@@ -44,4 +44,14 @@ describe('CounterGroupService', () => {
     // then
     expect(service.counters.length).toBe(10);
   });
+
+  it('should reset size to 0 when reset', () => {
+    // given
+
+    // when
+    service.reset();
+    // then
+    expect(service.counters.length).toBe(0);
+  });
+
 });
