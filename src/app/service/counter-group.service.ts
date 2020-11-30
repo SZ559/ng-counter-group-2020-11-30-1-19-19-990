@@ -25,6 +25,10 @@ export class CounterGroupService {
     this.generateCounters();
   }
 
+  public reset(): void {
+    this.setSize('0');
+  }
+
   private generateCounters(): void {
     for (let step = 0; step < this.size; step++)
     {
