@@ -2,6 +2,8 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
+import { CountergroupComponent } from './countergroup/countergroup.component';
+import { Counter } from './models/counter';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +13,8 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        CounterComponent
+        CounterComponent,
+        CountergroupComponent,
       ],
     }).compileComponents();
   });
