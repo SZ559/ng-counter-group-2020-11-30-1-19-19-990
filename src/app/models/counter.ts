@@ -9,4 +9,9 @@ export class Counter {
   {
     this.account ++;
   }
+
+  public decrease(): void
+  {
+    this.account --;
+  }
 }
