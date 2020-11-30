@@ -1,3 +1,4 @@
+import { element as count } from 'protractor';
 import { Counter } from './../models/counter';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -31,5 +32,19 @@ describe('CountergroupComponent', () => {
 
   it('should contain counters when create instance', () => {
     expect(component.counters.length).toBe(component.size);
+  });
+
+  it('should return sum of all counters when call sum', () => {
+    // given
+    let expectedSum = 0;
+    component.counters.forEach(element => {
+      element.account = 1;
+      expectedSum += element.account;
+    });
+    // when
+    const sum = component.sum();
+
+    // then
+    expect(sum).toBe(expectedSum);
   });
 });

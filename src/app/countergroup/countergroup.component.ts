@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import { Counter } from '../models/counter';
 
@@ -17,5 +18,11 @@ export class CountergroupComponent implements OnInit {
     {
       this.counters.push(new Counter());
     }
+  }
+
+  public sum(): number {
+    return this.counters.reduce((result, count) => {
+      return result + count.account;
+    }, 0);
   }
 }
