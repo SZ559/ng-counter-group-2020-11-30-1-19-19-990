@@ -34,7 +34,8 @@
             ],
             "styles": [
               "src/theme.less",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           },
@@ -130,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "ng-counter-group"
+  "defaultProject": "ng-counter-group",
+  "cli": {
+    "analytics": "e4aba9d1-851d-4bce-8d31-58f178d2b616"
+  }
 }
