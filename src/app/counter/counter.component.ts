@@ -14,9 +14,6 @@ export class CounterComponent implements OnInit {
   }
 
   @Input() public counter!: Counter;
-  // constructor() {
-  //   //this.counter = new Counter();
-  // }
 
   ngOnInit(): void {
 
