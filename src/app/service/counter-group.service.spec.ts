@@ -47,11 +47,17 @@ describe('CounterGroupService', () => {
 
   it('should reset size to 0 when reset', () => {
     // given
-
+    service.setSize('3');
+    service.counters.forEach(element => {
+      element.account = 1;
+    });
     // when
     service.reset();
     // then
-    expect(service.counters.length).toBe(0);
+    expect(service.sum()).toBe(0);
+    expect(service.counters[0].account).toBe(0);
+    expect(service.counters[1].account).toBe(0);
+    expect(service.counters[2].account).toBe(0);
   });
 
 });
